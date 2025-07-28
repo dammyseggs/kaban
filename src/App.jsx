@@ -3,6 +3,7 @@ import { Toaster } from "react-hot-toast";
 import Login from './pages/auth/Login'
 import './App.css'
 import ThemeToggle from './components/ThemeToggle.jsx'
+import Sidebar from "./components/Sidebar.jsx";
 
 
 function App() {
@@ -12,9 +13,10 @@ function App() {
     <>
       <Toaster position="top-center" />
       <Routes>
-        <Route path="/login" element={<Login />} />
+        <Route path="/" element={<Login />} />
+        <Route path='/*' element={<Sidebar />}></Route>
       </Routes>
-      <ThemeToggle />
+      {/* <ThemeToggle /> */}
     </>
   );
 }

@@ -40,7 +40,7 @@ const Login = () => {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center px-4 bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-300">
       <div className="mb-8 -mt-12">
-        <img src="/flowboard.png" alt="Logo" className="h-20 w-auto" />
+        <img src="/flowboard.png" alt="Logo" className="h-25 w-auto" />
       </div>
 
       <div className="w-full max-w-sm bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 transition-colors duration-300">
@@ -91,7 +91,7 @@ const Login = () => {
           </div>
 
           <div className="mb-4 text-right">
-            <Link to="/resetpassword" className="text-sm text-orange-500 hover:underline">
+            <Link to="/resetpassword" className="text-sm font-medium text-flowblue hover:underline">
               Forgot Password?
             </Link>
           </div>
@@ -100,7 +100,7 @@ const Login = () => {
             <button
               type="submit"
               disabled={loading}
-              className="w-full px-4 py-2 flex justify-center items-center bg-orange-500 text-white font-semibold rounded-lg hover:bg-orange-400 transition-colors duration-200 disabled:opacity-60"
+              className="w-full px-4 py-2 flex justify-center items-center bg-flowblue text-white font-semibold rounded-lg hover:bg-flowbluer transition-colors duration-200 disabled:opacity-60"
             >
               {loading ? (
                 <>

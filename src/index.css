@@ -2,6 +2,11 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+@theme {
+  --color-flowblue: #6caad0;
+  --color-flowbluer: #7c81d5;
+}
+
 html {
   transition: color-scheme 0.2s;
 }
