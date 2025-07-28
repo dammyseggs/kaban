@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+html {
+  transition: color-scheme 0.2s;
+}
+
+html.dark {
+  color-scheme: dark;
+}
