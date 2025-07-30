@@ -27,7 +27,7 @@ const Sidebar = () => {
 
  const links = useMemo(() => [
     {
-      to: "/dashboard",
+      to: "/home",
       name: "Home",
       icon: faHome,
       alticon: faHome,

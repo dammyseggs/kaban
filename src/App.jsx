@@ -4,6 +4,7 @@ import Login from './pages/auth/Login'
 import './App.css'
 import ThemeToggle from './components/ThemeToggle.jsx'
 import Sidebar from "./components/Sidebar.jsx";
+import Home from "./pages/Home.jsx";
 
 
 function App() {
@@ -14,7 +15,9 @@ function App() {
       <Toaster position="top-center" />
       <Routes>
         <Route path="/" element={<Login />} />
-        <Route path='/*' element={<Sidebar />}></Route>
+        <Route path='/*' element={<Sidebar />}>
+          <Route path='home' element={<Home />} />
+        </Route>
       </Routes>
       {/* <ThemeToggle /> */}
     </>

@@ -6,7 +6,7 @@ import ThemeToggle from './ThemeToggle.jsx'
 const TopNav = () => {
   return (
     
-    <nav className="bg-white dark:bg-gray-800 shadow-sm p-4 rounded-lg flex items-center justify-between mb-6">
+    <nav className="bg-white dark:bg-gray-800 shadow-sm p-4 rounded-lg flex items-center justify-between mb-2">
       {/* Search bar */}
       <div className="relative flex items-center w-1/3">
         <FontAwesomeIcon icon={faSearch} className="absolute left-3 text-gray-400 dark:text-gray-500" />
