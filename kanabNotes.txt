@@ -1,0 +1,5 @@
+kaban Notes
+
+the priority in the kaban will be editable by the admin
+
+everybody will bw able to filter by priority 

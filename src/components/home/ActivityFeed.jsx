@@ -1,7 +1,5 @@
-import React from 'react'
+import React from 'react';
   
-
-
 const activity = [
     "✅ Jane moved 'Login UI' to Done",
     "✏️ You edited 'Sidebar Layout'",
@@ -9,7 +7,7 @@ const activity = [
   ];
 
 const ActivityFeed = () => {
-   return (
+     return (
     <div className="bg-white dark:bg-gray-800 p-4 rounded-xl shadow-md dark:shadow-lg h-full transition-colors">
       <h3 className="text-lg font-semibold mb-3 text-gray-700 dark:text-gray-100">
         📢 Recent Activity

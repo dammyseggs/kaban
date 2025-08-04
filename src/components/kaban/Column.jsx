@@ -21,7 +21,7 @@ const getHeaderClasses  = (id) => {
 const Column = ({ column, tasks }) => {
       const headerClasses = getHeaderClasses(column.id);
   return (
-    <div className="bg-gray-100 dark:bg-gray-700 p-4 rounded-lg w-62 flex-shrink-0">
+    <div className="bg-gray-100 dark:bg-gray-700 p-3 rounded-lg w-62 flex-shrink-0">
       <div className={`p-2 rounded-t-lg mb-2 font-bold text-lg ${headerClasses}`}>
         {column.title}
       </div>

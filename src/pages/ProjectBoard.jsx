@@ -13,12 +13,12 @@ const ProjectBoard = () => {
       <h1 className="text-2xl font-bold mb-4">📌 Project Board</h1>
       <button
         onClick={() => navigate("/projects")}
-        className="flex items-center text-sm text-blue-600 dark:text-blue-400 hover:underline mb-4"
+        className="flex items-center text-sm text-blue-600 dark:text-blue-400 hover:underline mb-2"
       >
         <FontAwesomeIcon icon={faArrowLeft} className="mr-2" />
         back
       </button>
-      <p className="mb-4 text-gray-500 dark:text-gray-400">Project: {id}</p>
+      <p className="mb-2 text-gray-500 dark:text-gray-400">Project: {id}</p>
       <KabanBoard />
     </div>
   );

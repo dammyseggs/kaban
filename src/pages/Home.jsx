@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useState } from 'react'
 import ProjectCard from "../components/home/ProjectCard";
 import ActivityFeed from "../components/home/ActivityFeed";
 import QuickActions from "../components/home/QuickActions";
+import NewProjectModal from '../components/NewProjectModal';
+
+
 
 const Home = () => {
-  const mockProjects = [
+   const [showModal, setShowModal] = useState(false);
+
+    const mockProjects = [
     {
       id: "1",
       title: "Frontend Refactor",
@@ -41,13 +46,15 @@ const Home = () => {
           {mockProjects.map((project) => (
             <ProjectCard key={project.id} project={project} />
           ))}
-          <div className="bg-white dark:bg-gray-800 border-dashed border-2 border-gray-300 dark:border-gray-600 p-6 rounded-xl flex items-center justify-center cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-700 w-64 h-40 transition">
+          <button onClick={() => setShowModal(true)} className="bg-white dark:bg-gray-800 border-dashed border-2 border-gray-300 dark:border-gray-600 p-6 rounded-xl flex items-center justify-center cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-700 w-64 h-40 transition">
             <span className="text-gray-500 dark:text-gray-300 font-medium">
               + New Project
             </span>
-          </div>
+          </button>
         </div>
       </section>
+
+      <NewProjectModal isOpen={showModal} onClose={() => setShowModal(false)} />
     </div>
   );
 };
