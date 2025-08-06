@@ -10,7 +10,7 @@ import {
   faCog
 } from "@fortawesome/free-solid-svg-icons";
 import { NavLink, useLocation, Link, Outlet } from "react-router-dom";
-import TopNav from "./Topnav";
+import TopNav from "./TopNav";
 
 const Sidebar = () => {
   const [isCollapsed, setIsCollapsed] = useState(false);
