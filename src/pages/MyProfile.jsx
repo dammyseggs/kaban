@@ -17,7 +17,7 @@ const dummyProjects = [
 
 const MyProfile = () => {
   return (
-    <div className="p-6 min-h-screen bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+    <div className="p-5 min-h-screen bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
       <h1 className="text-2xl font-bold mb-6">👤 My Profile</h1>
       <UserInfoCard user={dummyUser} />
       <div className="mt-6 flex flex-col lg:flex-row gap-6">
