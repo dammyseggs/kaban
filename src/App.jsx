@@ -14,8 +14,8 @@ function App() {
     <>
       <Toaster position="top-center" />
       <Routes>
-        <Route path="/" element={<Login />} />
-        <Route path="/*" element={<Sidebar />}>
+        <Route path="/login" element={<Login />} />
+        <Route path="/" element={<Sidebar />}>
           <Route path="home" element={<Home />} />
           <Route path="projects" element={<Projects />} />
           <Route path="projects/:id" element={<ProjectBoard/>} />
