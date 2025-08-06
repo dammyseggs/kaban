@@ -1,6 +1,7 @@
 import React from "react";
 import { Droppable, Draggable } from "@hello-pangea/dnd";
 import TaskCard from "./TaskCard";
+import AddTaskForm from '../AddTaskForm';
 
 
 const getHeaderClasses  = (id) => {
@@ -18,11 +19,13 @@ const getHeaderClasses  = (id) => {
   }
 };
 
-const Column = ({ column, tasks }) => {
+const Column = ({ column, tasks, onAddTask  }) => {
       const headerClasses = getHeaderClasses(column.id);
   return (
-    <div className="bg-gray-100 dark:bg-gray-700 p-3 rounded-lg w-62 flex-shrink-0">
-      <div className={`p-2 rounded-t-lg mb-2 font-bold text-lg ${headerClasses}`}>
+    <div className="bg-gray-100 dark:bg-gray-700 p-4 rounded-lg w-62 flex-shrink-0">
+      <div
+        className={`p-3 rounded-t-lg mb-2 font-bold text-lg ${headerClasses}`}
+      >
         {column.title}
       </div>
 
@@ -50,6 +53,12 @@ const Column = ({ column, tasks }) => {
           </div>
         )}
       </Droppable>
+
+      {column.id == "todo" && (
+        <div>
+           <AddTaskForm onAddTask={(newTask) => onAddTask(column.id, newTask)} />
+        </div>
+      )}
     </div>
   );
 };

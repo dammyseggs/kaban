@@ -7,6 +7,7 @@ import Sidebar from "./components/Sidebar.jsx";
 import Home from "./pages/Home.jsx";
 import Projects from "./pages/Projects.jsx";
 import ProjectBoard from "./pages/ProjectBoard.jsx";
+import MyProfile from "./pages/MyProfile.jsx";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="home" element={<Home />} />
           <Route path="projects" element={<Projects />} />
           <Route path="projects/:id" element={<ProjectBoard/>} />
+          <Route path="myprofile" element={<MyProfile />} />
         </Route>
       </Routes>
       {/* <ThemeToggle /> */}

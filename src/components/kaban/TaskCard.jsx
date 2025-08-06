@@ -14,7 +14,7 @@ const TaskCard = ({ task }) => {
     "bg-gray-200 text-gray-700 dark:bg-gray-700 dark:text-gray-200";
 
   return (
-    <div className="bg-white dark:bg-gray-800 rounded-lg p-4 mb-4 shadow-sm border dark:border-gray-700">
+    <div className="bg-white dark:bg-gray-800 rounded-lg p-3 mb-3 shadow-sm border dark:border-gray-700">
       <div className="flex justify-between items-start">
         <p className="font-medium text-sm text-gray-800 dark:text-gray-100">
           {task.title}
