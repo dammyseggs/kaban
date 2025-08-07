@@ -16,9 +16,9 @@ function App() {
       <Routes>
         {/* <Route path="/login" element={<Login />} /> */}
         <Route path="/" element={<Sidebar />}>
-          <Route path="home" element={<Home />} />
+          <Route index element={<Home />} />
           <Route path="projects" element={<Projects />} />
-          <Route path="projects/:id" element={<ProjectBoard/>} />
+          <Route path="projects/:id" element={<ProjectBoard />} />
           <Route path="myprofile" element={<MyProfile />} />
         </Route>
       </Routes>
