@@ -17,9 +17,9 @@ function App() {
         {/* <Route path="/login" element={<Login />} /> */}
         <Route path="/" element={<Sidebar />}>
           <Route index path="/home" element={<Home />} />
-          <Route path="projects" element={<Projects />} />
+          <Route path="/projects" element={<Projects />} />
           <Route path="projects/:id" element={<ProjectBoard />} />
-          <Route path="myprofile" element={<MyProfile />} />
+          <Route path="/myprofile" element={<MyProfile />} />
         </Route>
       </Routes>
       {/* <ThemeToggle /> */}
